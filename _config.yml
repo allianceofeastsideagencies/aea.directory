@@ -1,0 +1,28 @@
+title: Alliance of Eastside Agencies Directory
+tagline: Connecting Eastside residents with essential human services across housing, health, food, education, and more.
+email: rochelle.claytonstrunk@encompassnw.org
+description: >- # this means to ignore newlines until "baseurl:"
+  The Alliance of Eastside Agencies Directory connects community members to local human-services providers, covering housing, food, health, education, and more. It promotes access, awareness, and collaboration across East King County, helping families, youth, seniors, and individuals find essential services while strengthening the region’s nonprofit and government service network.
+baseurl: ""
+url: "https://aea.directory"
+
+collections:
+  agencies:
+    output: true
+    sort_by: title
+defaults:
+  - scope:
+      path: _agencies
+    values:
+      layout: agency
+
+# Build settings
+exclude:
+  - vendor
+  - Gemfile.lock
+  - Gemfile
+  - README.md
+  - script
+
+plugins:
+  - jekyll-seo-tag
