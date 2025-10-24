@@ -1,0 +1,9 @@
+---
+layout: page
+---
+{{ content }}
+<ul>
+  {% for agency in site.agencies %}
+    <li><a href="{{ agency.url }}">{{ agency.title }}</a></li>
+  {% endfor %}
+</ul>
