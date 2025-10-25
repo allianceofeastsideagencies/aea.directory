@@ -10,17 +10,26 @@ collections:
   agencies:
     output: true
     sort_by: title
+  events:
+    output: true
+    sort_by: start_date
 defaults:
   - scope:
       path: _agencies
     values:
       layout: agency
+  - scope:
+      path: _events
+    values:
+      layout: event
 
 # Build settings
 exclude:
   - vendor
   - Gemfile.lock
   - Gemfile
+  - LICENSE
+  - mise.toml
   - README.md
   - script
 
