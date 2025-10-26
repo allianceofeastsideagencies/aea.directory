@@ -29,7 +29,7 @@
   <summary>Posts</summary>
   <ul>
     <li><a href="https://jekyllrb.com/docs/">Jekyll</a></li>
-    <li><a href="https://www.netlifycms.org/">Netlify CMS content management</a></li>
+    <li><a href="https://decapcms.org/docs/intro/">Decap CMS</a></li>
     <li><a href="https://www.netlify.com/">Netlify hosting</a></li>
     <li><a href="https://www.netlify.com/">Netlify DNS</a></li>
   </ul>
@@ -46,13 +46,13 @@ calef maintains the access credentials for these resources.
 Clone the project
 
 ```bash
-  git clone git@github.com:aea/aea-directory.git
+  git clone git@github.com:aea/aea.directory.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd aea-directory
+  cd aea.directory
 ```
 
 Install dependencies
@@ -75,7 +75,7 @@ Entries are in \_agencies. Each field means as follows:
 - agency_url: The URL of the agency.
 - categories: The services offered by the agency.
 
-You can create entries via <a href="https://aea.directory/admin">Netlify CMS</a>.
+You can create entries via <a href="https://aea.directory/admin">Decap CMS</a>.
 
 <!-- License -->
 ## :warning: License
