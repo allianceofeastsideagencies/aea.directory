@@ -1,3 +1,4 @@
+---
 title: Alliance of Eastside Agencies Directory
 tagline: Connecting Eastside residents with essential human services across housing, health, food, education, and more.
 email: rochelle.claytonstrunk@encompassnw.org
@@ -9,29 +10,29 @@ url: "https://aea.directory"
 collections:
   agencies:
     output: true
-    sort_by: title
   events:
     output: true
-    sort_by: start_date
 defaults:
   - scope:
-      path: _agencies
+      path: "_agencies"
+      type: "agencies"
     values:
-      layout: agency
+      layout: "agency"
   - scope:
-      path: _events
+      path: "_events"
+      type: "events"
     values:
-      layout: event
+      layout: "event"
 
 # Build settings
 exclude:
-  - vendor
-  - Gemfile.lock
   - Gemfile
+  - Gemfile.lock
   - LICENSE
   - mise.toml
   - README.md
   - script
-
+  - vendor
+future: true
 plugins:
   - jekyll-seo-tag
