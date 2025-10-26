@@ -6,8 +6,8 @@ require 'time'
 require 'cgi'
 
 # Constants
-ICAL_URL = "https://cisc-seattle.org/events/?ical=1"
-AGENCY_NAME = "Chinese Information & Service Center (CISC)"
+ICAL_URL = "https://togethercenter.org/events/?ical=1"
+AGENCY_NAME = "Together Center"
 OUTPUT_DIR = "_events"
 
 # Create the output directory if needed

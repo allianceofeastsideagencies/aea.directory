@@ -28,9 +28,18 @@ calendar.events.each do |event|
   start_date = event.dtstart.to_time
   end_date = event.dtend&.to_time
   title = event.summary.strip
-  location = event.location ? event.location.strip : "TBD"
+  location = if event.location
+    # If it’s a single value, this returns a string; if it’s multi-valued, join with comma
+    Array(event.location.value).map(&:to_s).join(', ').strip
+  else
+    "TBD"
+  end
   url = event.url ? event.url.to_s.strip : ICAL_URL
-  description = event.description ? event.description.strip : "Details forthcoming."
+  description = if event.description
+    Array(event.description.value).map(&:to_s).join("\n").strip
+  else
+    "Details forthcoming."
+  end
 
   # Generate a filename-safe title
   safe_title = title.downcase.gsub(/[^a-z0-9]+/, '-').gsub(/^-|-$/, '')

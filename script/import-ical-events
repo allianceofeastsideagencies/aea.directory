@@ -6,3 +6,4 @@ set -e # exit if any command fails
 ./script/import-cisc-events
 ./script/import-empoweryouthnw-events
 ./script/import-kidvantage-events
+./script/import-togethercenter-events
