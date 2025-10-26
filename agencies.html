@@ -1,0 +1,13 @@
+---
+layout: "page"
+title: "Agencies"
+permalink: "/agencies/"
+---
+<p>{{ site.description }}</p>
+<h2>Agencies</h2>
+<p>The Alliance of Eastside Agencies Directory compiles news, events, and services offered by East King County agencies. For more information about the Alliance of Eastside Agencies, please <a href="https://allianceofeastsideagencies.org">visit our website</a>. Missing from our directory? <a href="/contact-us/">Add your agency here</a>.</p>
+<ul>
+  {% for agency in site.agencies %}
+    <li><a href="{{ agency.url }}">{{ agency.title }}</a></li>
+  {% endfor %}
+</ul>
