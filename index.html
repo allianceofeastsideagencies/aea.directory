@@ -1,0 +1,23 @@
+---
+layout: page
+title: "Home"
+---
+<p>{{ site.description }}</p>
+  <div class="row align-items-start">
+  <div class="row">
+    <div class="col-8">
+      <h2>News</h2>
+      <p>Catch up on the latest news from our partner agencies in East King County—all the updates you need in one place.</p>
+      <p>Eventually there will be news here.</p>
+    </div>
+    <div class="col-4">
+      <h2>Events</h2>
+      <p>From classes to community meetups, check out what’s happening soon with our East King County partners.</p>
+      <ul>
+        {% for event in site.events %}
+          <li><a href="{{ event.url }}">{{ event.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
