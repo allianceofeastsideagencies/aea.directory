@@ -3,9 +3,14 @@
 source "https://rubygems.org"
 
 gem "base64"
+gem "cgi"
 gem "csv"
+gem "fileutils"
+gem "icalendar"
 gem "jekyll"
 gem "logger"
+gem "open-uri"
+gem "time"
 
 group :jekyll_plugins do
   gem "jekyll-archives"
