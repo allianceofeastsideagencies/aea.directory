@@ -10,17 +10,17 @@ layout: page
 {{ content }}
 <div class="container text-center">
   <div class="row align-items-start">
-    <div class="col">
+    <div class="col-4">
       {% if page.location %}
-        {{ page.location }}
+        <a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q={{ page.location | url_encode }}">{{ page.location }}</a>
       {% endif %}
     </div>
-    <div class="col">
+    <div class="col-4">
       {% if page.phone %}
         P: <a href="tel:{{ page.phone }}">{{page.phone}}</a>
       {% endif %}
     </div>
-    <div class="col">
+    <div class="col-4">
       {% if page.email %}
         <a href="mailto:{{ page.email }}">{{ page.email }}</a>
       {% endif %}
