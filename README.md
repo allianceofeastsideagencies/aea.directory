@@ -5,8 +5,8 @@
   </p>
   <!-- Badges -->
   <p>
-    <a href="">
-      <img src="" alt="Netlify status" />
+    <a href="https://app.netlify.com/projects/aeadirectory/deploys">
+      <img src="https://api.netlify.com/api/v1/badges/71ebc32b-c2e8-4eeb-a635-c00a795f4110/deploy-status" alt="Netlify status" />
     </a>
   </p>
 </div>
